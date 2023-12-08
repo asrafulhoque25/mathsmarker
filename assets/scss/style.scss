@@ -771,7 +771,7 @@ main#dashboard {
         background-color: var(--clr-primary);
         color: #fff;
 
-        span{
+        span {
           color: #fff;
         }
       }
@@ -1271,6 +1271,7 @@ td.dp-highlight.ui-datepicker-today {
     right: 2px;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 0px 8px 8px 0px;
   }
 }
 .worksheetBtn {
@@ -1474,7 +1475,7 @@ td.data-count.bg-red {
       white-space: wrap;
     }
 
-  .top-book.dropdown-toggle {
+    .top-book.dropdown-toggle {
       &::after {
         right: 17px;
         position: absolute;
@@ -1490,11 +1491,10 @@ td.data-count.bg-red {
 }
 .nested-chapter {
   .dropdown-toggle {
-
-    &.show{
+    &.show {
       position: relative !important;
-  
-      &::after{
+
+      &::after {
         position: absolute;
         content: "";
         height: 30px;
@@ -1502,12 +1502,11 @@ td.data-count.bg-red {
         left: -36px;
         top: 6px;
         border-radius: 0px 3px 3px 0px;
-background: var(--primary-color-primary, #5964E0);
+        background: var(--primary-color-primary, #5964e0);
       }
     }
     &::after {
       border: 0 !important;
-
     }
   }
   .dropdown-menu {
@@ -1517,8 +1516,6 @@ background: var(--primary-color-primary, #5964E0);
     border: 1px solid var(--dark-color-dark-5, #d2d2d6);
     background-color: #f3f3f8 !important;
   }
-
-
 }
 // 07/12/2023
 .feedback-table {
@@ -1765,9 +1762,8 @@ background: var(--primary-color-primary, #5964E0);
 
 /*css for chatbot-tab-pane  END*/
 
-
 /* question  start*/
-.common-search{
+.common-search {
   .form-search {
     background-repeat: no-repeat;
     background-position: 20px center;
@@ -1778,9 +1774,34 @@ background: var(--primary-color-primary, #5964E0);
     border-radius: 8px;
     border: 1px solid var(--clr-dark-7) !important;
     width: 300px;
-    &:focus{
+    &:focus {
       border: 1px solid var(--clr-dark-7) !important;
     }
   }
-}    
+}
+
+
+
+    .form-check-input {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #D2D2D6 !important;
+
+      &:focus{
+        border: 1px solid var(--clr-primary);
+        box-shadow: none !important;
+      }
+    }
+  
+    .index-form{
+      border-radius: 12px;
+border: 1px solid  #E6E6EC;
+background:  #FFF;
+      .border-index{
+        height: 22px;
+        border: 1px solid #D2D2D6;
+        width: 1px;
+      }
+    }
+
 /* question END*/
