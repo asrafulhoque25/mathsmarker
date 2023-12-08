@@ -5,7 +5,6 @@
 .login-registration-wrap {
     min-height: 100vh;
     display: flex;
-    align-items: center;
     background: #fff;
 }
 
@@ -29,6 +28,13 @@
 }
 .login-registration-form-wrap{
     flex: 1 0 36%;
+
+    .login-registration-form-innder-wrap {
+        height: 100vh;
+        .already-have-member {
+            padding-bottom: 55px;
+        }
+    }
     
     padding-inline: 120px 80px;
     .login-registration-inner {
@@ -50,6 +56,7 @@
         }
 
         .student-teacher-select-label {
+            
             .input-border {
                 border: 1px solid  #E6E6EC;
                 box-shadow: 2px 3px 0px 0px #E6E6EC;
@@ -79,35 +86,92 @@
         }
         
         .student-teacher-select {
+            .student-select-login {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: 12px;
+                    bottom: 0;
+                    width: 68px;
+                    height: 71px;
+                    background: url('../img/select-student-login.svg');
+                    z-index: 99;
+                }
+            }
+            .teacher-select-login {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: 12px;
+                    bottom: 0;
+                    width: 69px;
+                    height: 74px;
+                    background: url('../img/select-teacher-login.svg');
+                    z-index: 99;
+                }
+            }
+            .student-teacher-select-bg-color {
+                background-color: transparent;
+                z-index: 8;
+                border-radius: 12px;
+            }
             label {
                 input {
                     &:checked~ {
                         .defaultCheck{
                             display: none;
+                            z-index: 99;
                         }
                         .activeCheck{
                             display: block !important;
+                            z-index: 99;
                         }
 
                         .input-border {
-                            background: #F3F4FF;
                             box-shadow: 3px 5px 0px 0px #5964E0;
                             border-radius: 12px;
                             border: 1px solid  #F3F4FF;
+                        }
+                        .student-teacher-select-bg-color {
+                            background-color: #F3F4FF;
                             z-index: 5;
+                            border-radius: 12px;
                         }
-                        .check-label{
-                            z-index: 9;
+                        .check-label {
+                            z-index: 99;
                         }
+                        
                     }
                 }
             }
         }
 
+
         
     }
 }
 
-.fname-lname-wrap {
-    gap: 24px;
+.login-registration-form {
+    input[type=text], input[type=email], input[type=password] {
+        width: 100%;
+    }
+    .btn-save {
+        height: 50px;
+        margin-top: 15px;
+        &:hover {
+            span {
+                svg * {
+                    stroke: #5964E0;
+                }
+            }
+        }
+
+    }
 }
+
+
+
+
+
