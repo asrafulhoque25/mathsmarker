@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/fonts/font.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/afzal.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
@@ -75,7 +76,7 @@
                 <div class="col-6 col-sm-7">
                     <div class="header-right">
                         <ul class="list-unstyled d-flex gap-4 align-items-center justify-content-end mb-0">
-                        
+
                             <li>
 
                                 <div class="notify-view d-flex align-items-center gap-3 px-3">
@@ -661,12 +662,25 @@
                                     </td>
 
                                     <td class="text-start text-nowrap">
-                                        <p class="mb-0 fw-medium">
-                                            320
-                                        </p>
-                                        <span class="fs-12 text-clr-gray">
-                                            Student
-                                        </span>
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <ul class="participation-imgs mb-0 list-unstyled d-flex">
+                                                <li>
+                                                    <img src="assets/img/participant1.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant2.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant3.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                            </ul>
+                                            <span class="fs-12 text-clr-gray">
+                                                320 Student
+                                            </span>
+                                        </div>
                                     </td>
 
                                     <td class="text-start text-nowrap">
@@ -698,11 +712,19 @@
                                                     class="img-fluid">
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                <li>
+                                                    <a class="dropdown-item duplicate-btn" href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#session-duplicate-modal">
+                                                        Duplicate
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#session-delete-modal">Delete</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -730,12 +752,25 @@
                                     </td>
 
                                     <td class="text-start text-nowrap">
-                                        <p class="mb-0 fw-medium">
-                                            320
-                                        </p>
-                                        <span class="fs-12 text-clr-gray">
-                                            Student
-                                        </span>
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <ul class="participation-imgs mb-0 list-unstyled d-flex">
+                                                <li>
+                                                    <img src="assets/img/participant1.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant2.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant3.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                            </ul>
+                                            <span class="fs-12 text-clr-gray">
+                                                320 Student
+                                            </span>
+                                        </div>
                                     </td>
 
                                     <td class="text-start text-nowrap">
@@ -767,11 +802,19 @@
                                                     class="img-fluid">
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                <li>
+                                                    <a class="dropdown-item duplicate-btn" href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#session-duplicate-modal">
+                                                        Duplicate
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#session-delete-modal">Delete</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -799,12 +842,25 @@
                                     </td>
 
                                     <td class="text-start text-nowrap">
-                                        <p class="mb-0 fw-medium">
-                                            320
-                                        </p>
-                                        <span class="fs-12 text-clr-gray">
-                                            Student
-                                        </span>
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <ul class="participation-imgs mb-0 list-unstyled d-flex">
+                                                <li>
+                                                    <img src="assets/img/participant1.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant2.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant3.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                            </ul>
+                                            <span class="fs-12 text-clr-gray">
+                                                320 Student
+                                            </span>
+                                        </div>
                                     </td>
 
                                     <td class="text-start text-nowrap">
@@ -836,11 +892,19 @@
                                                     class="img-fluid">
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                <li>
+                                                    <a class="dropdown-item duplicate-btn" href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#session-duplicate-modal">
+                                                        Duplicate
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#session-delete-modal">Delete</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -868,12 +932,25 @@
                                     </td>
 
                                     <td class="text-start text-nowrap">
-                                        <p class="mb-0 fw-medium">
-                                            320
-                                        </p>
-                                        <span class="fs-12 text-clr-gray">
-                                            Student
-                                        </span>
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <ul class="participation-imgs mb-0 list-unstyled d-flex">
+                                                <li>
+                                                    <img src="assets/img/participant1.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant2.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant3.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                            </ul>
+                                            <span class="fs-12 text-clr-gray">
+                                                320 Student
+                                            </span>
+                                        </div>
                                     </td>
 
                                     <td class="text-start text-nowrap">
@@ -905,11 +982,19 @@
                                                     class="img-fluid">
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                <li>
+                                                    <a class="dropdown-item duplicate-btn" href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#session-duplicate-modal">
+                                                        Duplicate
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#session-delete-modal">Delete</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -937,12 +1022,25 @@
                                     </td>
 
                                     <td class="text-start text-nowrap">
-                                        <p class="mb-0 fw-medium">
-                                            320
-                                        </p>
-                                        <span class="fs-12 text-clr-gray">
-                                            Student
-                                        </span>
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <ul class="participation-imgs mb-0 list-unstyled d-flex">
+                                                <li>
+                                                    <img src="assets/img/participant1.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant2.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/participant3.png" alt="img"
+                                                        class="img-fluid rounded-circle">
+                                                </li>
+                                            </ul>
+                                            <span class="fs-12 text-clr-gray">
+                                                320 Student
+                                            </span>
+                                        </div>
                                     </td>
 
                                     <td class="text-start text-nowrap">
@@ -974,11 +1072,19 @@
                                                     class="img-fluid">
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                <li>
+                                                    <a class="dropdown-item duplicate-btn" href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#session-duplicate-modal">
+                                                        Duplicate
+                                                    </a>
+                                                </li>
+                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#session-delete-modal">Delete</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -1057,9 +1163,69 @@
 
             </div>
         </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#session-delete-modal">
+            session delete modal
+        </button>
     </main>
     <!-- dashboard -->
 
+
+
+    <!-- modal -->
+    <!-- modal-wrapper -->
+    <div class="modal-wrapper">
+
+        <!-- session-delete-modal -->
+        <div class="modal fade" id="session-delete-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content radius-8 py-4">
+                    <div class="modal-body">
+                        <div class="modal-info text-center">
+                            <img src="assets/img/success-icon.svg" alt="icon" class="img-fluid">
+                            <h3 class="fs-4 fw-bold text-dark-1 mb-2 mt-3">
+                                Success
+                            </h3>
+                            <p class="fs-6 fw-normal text-dark-3 mb-4 pb-2">
+                                Your Sessions has been deleted.
+                            </p>
+                            <a href="index.html"
+                                class="text-decoration-none fw-bold fs-6 text-clr-primary bg-dark-7 px-4 py-2 rounded">
+                                Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- session-delete-modal -end -->
+
+        <!-- session-duplicate-modal -->
+        <div class="modal fade" id="session-duplicate-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content radius-8 py-4">
+                    <div class="modal-body">
+                        <div class="modal-info text-center">
+                            <img src="assets/img/duplicate1.svg" alt="icon" class="img-fluid">
+                            <h3 class="fs-4 fw-bold text-dark-1 mb-2 mt-3">
+                                Duplicate Success
+                            </h3>
+                            <p class="fs-6 fw-normal text-dark-3 mb-4 pb-2">
+                                Your Session has been Duplicate Success.
+                            </p>
+                            <a href="index.html"
+                                class="text-decoration-none fw-bold fs-6 text-clr-primary bg-dark-7 px-4 py-2 rounded">
+                                Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ession-duplicate-modal -end -->
+
+    </div>
+    <!-- modal-wrapper -end -->
+    <!-- modal -end -->
 
     <!-- off-canvas -->
 
@@ -1110,10 +1276,6 @@
                     </label>
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
                 </div>
-
-
-
-
             </form>
 
             <div class="btn-wrap d-flex justify-content-between">
@@ -1130,8 +1292,6 @@
         </div>
     </div>
     <!-- add-new-sessions off canvas -end -->
-
-
     <!-- off-canvas -end -->
 
 
