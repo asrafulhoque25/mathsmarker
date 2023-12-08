@@ -1,92 +1,33 @@
-.fs-36 {
-  font-size: 36px;
-}
+.fs-36 { font-size: 36px; }
 
-.login-registration-wrap {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: #fff;
-}
+.login-registration-wrap { min-height: 100vh; display: flex; background: #fff; }
 
-.login-registration-banner {
-  flex: 1 0 64%;
-}
-.login-registration-banner .banner-image-space {
-  min-height: 100vh;
-  background: url("../img/login-registration-bg.webp");
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.login-registration-banner .login-registration-banner-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+.login-registration-banner { flex: 1 0 64%; }
+.login-registration-banner .banner-image-space { min-height: 100vh; background: url("../img/login-registration-bg.webp"); object-fit: contain; background-position: center center; background-size: cover; background-repeat: no-repeat; }
+.login-registration-banner .login-registration-banner-img img { object-fit: cover; }
 
-.login-registration-form-wrap {
-  flex: 1 0 36%;
-  padding-inline: 120px 80px;
-}
-.login-registration-form-wrap .login-registration-inner {
-  min-width: 390px;
-  max-width: 470px;
-  width: 100%;
-}
-.login-registration-form-wrap .login-registration-inner .dark-logo {
-  max-width: 273px;
-  margin-bottom: 12px;
-}
-.login-registration-form-wrap .login-registration-inner .login-page-list {
-  margin-top: 25px;
-  gap: 8px;
-}
-.login-registration-form-wrap .login-registration-inner .login-page-list .login-page-list-item {
-  gap: 16px;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select-label {
-  padding: 27px 24px;
-  width: 100%;
-  background: #fff;
-  border-radius: 12px;
-  position: relative;
-  padding-left: 64px;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .input-border {
-  border: 1px solid #E6E6EC;
-  box-shadow: 2px 3px 0px 0px #E6E6EC;
-  border-radius: 12px;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .activeCheck,
-.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .defaultCheck {
-  position: absolute;
-  left: 24px;
-  top: calc(50% - 12px);
-  width: 24px;
-  height: 24px;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .activeCheck {
-  display: none;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .defaultCheck {
-  display: none;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .activeCheck {
-  display: block !important;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .input-border {
-  background: #F3F4FF;
-  box-shadow: 3px 5px 0px 0px #5964E0;
-  border-radius: 12px;
-  border: 1px solid #F3F4FF;
-  z-index: 5;
-}
-.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .check-label {
-  z-index: 9;
-}
+.login-registration-form-wrap { flex: 1 0 36%; padding-inline: 120px 80px; }
+.login-registration-form-wrap .login-registration-form-innder-wrap { height: 100vh; }
+.login-registration-form-wrap .login-registration-form-innder-wrap .already-have-member { padding-bottom: 55px; }
+.login-registration-form-wrap .login-registration-inner { min-width: 390px; max-width: 470px; width: 100%; }
+.login-registration-form-wrap .login-registration-inner .dark-logo { max-width: 273px; margin-bottom: 12px; }
+.login-registration-form-wrap .login-registration-inner .login-page-list { margin-top: 25px; gap: 8px; }
+.login-registration-form-wrap .login-registration-inner .login-page-list .login-page-list-item { gap: 16px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select-label { padding: 27px 24px; width: 100%; background: #fff; border-radius: 12px; position: relative; padding-left: 64px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .input-border { border: 1px solid  #E6E6EC; box-shadow: 2px 3px 0px 0px #E6E6EC; border-radius: 12px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .activeCheck, .login-registration-form-wrap .login-registration-inner .student-teacher-select-label .defaultCheck { position: absolute; left: 24px; top: calc(50% - 12px); width: 24px; height: 24px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select-label .activeCheck { display: none; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select .student-select-login { position: relative; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select .student-select-login::after { position: absolute; content: ''; right: 12px; bottom: 0; width: 68px; height: 71px; background: url("../img/select-student-login.svg"); z-index: 99; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select .teacher-select-login { position: relative; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select .teacher-select-login::after { position: absolute; content: ''; right: 12px; bottom: 0; width: 69px; height: 74px; background: url("../img/select-teacher-login.svg"); z-index: 99; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select .student-teacher-select-bg-color { background-color: transparent; z-index: 8; border-radius: 12px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .defaultCheck { display: none; z-index: 99; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .activeCheck { display: block !important; z-index: 99; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .input-border { box-shadow: 3px 5px 0px 0px #5964E0; border-radius: 12px; border: 1px solid  #F3F4FF; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .student-teacher-select-bg-color { background-color: #F3F4FF; z-index: 5; border-radius: 12px; }
+.login-registration-form-wrap .login-registration-inner .student-teacher-select label input:checked ~ .check-label { z-index: 99; }
 
-.fname-lname-wrap {
-  gap: 24px;
-}/*# sourceMappingURL=ashik.css.map */
+.login-registration-form input[type=text], .login-registration-form input[type=email], .login-registration-form input[type=password] { width: 100%; }
+.login-registration-form .btn-save { height: 50px; margin-top: 15px; }
+.login-registration-form .btn-save:hover span svg * { stroke: #5964E0; }
