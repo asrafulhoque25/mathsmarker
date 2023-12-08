@@ -810,7 +810,7 @@ main#dashboard {
     border-color: var(--clr-primary);
     background-color: var(--clr-primary) !important;
     p {
-      color: #fff;
+      color: #fff !important;
     }
 
     svg * {

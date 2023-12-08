@@ -305,55 +305,41 @@
                                 onkeyup="myFunction()"">
                         </div>
 
-                        <div class=" dropdown ContactFilterDropdown position-relative" id="checkboxes-count-filter">
-                            <button type="button"
-                                class="d-flex align-items-center justify-content-center gap-2 filterBtn filterdropdown-toggle"
+                        <div class="dropdown ContactFilterDropdown position-relative" id="checkboxes-count-filter">
+                            <button type="button" class="d-flex align-items-center justify-content-center gap-2 filterBtn filterdropdown-toggle"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_501_16512)">
-                                        <mask id="path-1-inside-1_501_16512" fill="white">
-                                            <path
-                                                d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z" />
-                                        </mask>
-                                        <path
-                                            d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z"
-                                            fill="#5964E0" />
-                                        <path
-                                            d="M12.4997 20L-0.300328 37.0667L33.833 62.6667V20H12.4997ZM7.49967 16.25H-13.8337V26.9167L-5.30033 33.3167L7.49967 16.25ZM7.49967 11.9833H28.833V3.87241L23.4444 -2.18976L7.49967 11.9833ZM0.833008 4.48333H-20.5003V12.5943L-15.1117 18.6564L0.833008 4.48333ZM0.833008 2.5H-20.5003H0.833008ZM3.33301 0L3.33301 -21.3333L3.33301 0ZM16.6663 0V-21.3333V0ZM19.1663 2.5L40.4997 2.5L19.1663 2.5ZM19.1663 4.48333L35.1111 18.6564L40.4997 12.5943V4.48333H19.1663ZM12.4997 11.9833L-3.44506 -2.18976L-8.83366 3.87241V11.9833H12.4997ZM9.16634 15.4167H-12.167V26.0833L-3.63366 32.4833L9.16634 15.4167ZM10.833 16.6667L-1.96699 33.7333L32.1663 59.3333V16.6667H10.833ZM10.833 11.35L-5.11173 -2.8231L-10.5003 3.23908V11.35H10.833ZM17.4997 3.85L33.4444 18.0231L38.833 11.9609V3.85H17.4997ZM16.6663 1.66667V-19.6667V1.66667ZM3.33301 1.66667L3.33301 -19.6667L3.33301 1.66667ZM2.49967 2.5H-18.8337H2.49967ZM2.49967 3.85H-18.8337V11.9609L-13.4451 18.0231L2.49967 3.85ZM9.16634 11.35H30.4997V3.23908L25.1111 -2.8231L9.16634 11.35ZM25.2997 2.93333L20.2997 -0.816667L-5.30033 33.3167L-0.300328 37.0667L25.2997 2.93333ZM28.833 16.25V11.9833H-13.8337V16.25H28.833ZM23.4444 -2.18976L16.7777 -9.68976L-15.1117 18.6564L-8.44506 26.1564L23.4444 -2.18976ZM22.1663 4.48333V2.5H-20.5003V4.48333H22.1663ZM22.1663 2.5C22.1663 7.49491 20.1821 12.2852 16.6502 15.8172L-13.5197 -14.3527C-17.9893 -9.88309 -20.5003 -3.82099 -20.5003 2.5L22.1663 2.5ZM16.6502 15.8172C13.1183 19.3491 8.32792 21.3333 3.33301 21.3333L3.33301 -21.3333C-2.98799 -21.3333 -9.05009 -18.8223 -13.5197 -14.3527L16.6502 15.8172ZM3.33301 21.3333H16.6663V-21.3333H3.33301L3.33301 21.3333ZM16.6663 21.3333C11.6714 21.3333 6.8811 19.3491 3.34916 15.8172L33.5191 -14.3527C29.0494 -18.8223 22.9873 -21.3333 16.6663 -21.3333L16.6663 21.3333ZM3.34916 15.8172C-0.182779 12.2852 -2.16699 7.4949 -2.16699 2.5L40.4997 2.5C40.4997 -3.82099 37.9887 -9.88309 33.5191 -14.3527L3.34916 15.8172ZM-2.16699 2.5V4.48333H40.4997V2.5H-2.16699ZM3.22161 -9.68976L-3.44506 -2.18976L28.4444 26.1564L35.1111 18.6564L3.22161 -9.68976ZM-8.83366 11.9833V20H33.833V11.9833H-8.83366ZM-3.63366 32.4833L-1.96699 33.7333L23.633 -0.4L21.9663 -1.65L-3.63366 32.4833ZM32.1663 16.6667V11.35H-10.5003V16.6667H32.1663ZM26.7777 25.5231L33.4444 18.0231L1.55494 -10.3231L-5.11173 -2.8231L26.7777 25.5231ZM38.833 3.85V2.5H-3.83366V3.85H38.833ZM38.833 2.5C38.833 -3.37892 36.4976 -9.01711 32.3405 -13.1742L2.17065 16.9957C-1.67388 13.1512 -3.83366 7.9369 -3.83366 2.5H38.833ZM32.3405 -13.1742C28.1835 -17.3313 22.5453 -19.6667 16.6663 -19.6667L16.6663 23C11.2294 23 6.01516 20.8402 2.17065 16.9957L32.3405 -13.1742ZM16.6663 -19.6667H3.33301V23H16.6663V-19.6667ZM3.33301 -19.6667C-2.54596 -19.6667 -8.18413 -17.3313 -12.3412 -13.1742L17.8287 16.9957C13.9842 20.8402 8.76994 23 3.33301 23L3.33301 -19.6667ZM-12.3412 -13.1742C-16.4983 -9.01714 -18.8337 -3.37896 -18.8337 2.5L23.833 2.5C23.833 7.93693 21.6732 13.1512 17.8287 16.9957L-12.3412 -13.1742ZM-18.8337 2.5V3.85H23.833V2.5H-18.8337ZM-13.4451 18.0231L-6.77839 25.5231L25.1111 -2.8231L18.4444 -10.3231L-13.4451 18.0231ZM-12.167 11.35V15.4167H30.4997V11.35H-12.167Z"
-                                            fill="#5964E0" mask="url(#path-1-inside-1_501_16512)" />
+                                    <mask id="path-1-inside-1_501_16512" fill="white">
+                                    <path d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z"/>
+                                    </mask>
+                                    <path d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z" fill="#5964E0"/>
+                                    <path d="M12.4997 20L-0.300328 37.0667L33.833 62.6667V20H12.4997ZM7.49967 16.25H-13.8337V26.9167L-5.30033 33.3167L7.49967 16.25ZM7.49967 11.9833H28.833V3.87241L23.4444 -2.18976L7.49967 11.9833ZM0.833008 4.48333H-20.5003V12.5943L-15.1117 18.6564L0.833008 4.48333ZM0.833008 2.5H-20.5003H0.833008ZM3.33301 0L3.33301 -21.3333L3.33301 0ZM16.6663 0V-21.3333V0ZM19.1663 2.5L40.4997 2.5L19.1663 2.5ZM19.1663 4.48333L35.1111 18.6564L40.4997 12.5943V4.48333H19.1663ZM12.4997 11.9833L-3.44506 -2.18976L-8.83366 3.87241V11.9833H12.4997ZM9.16634 15.4167H-12.167V26.0833L-3.63366 32.4833L9.16634 15.4167ZM10.833 16.6667L-1.96699 33.7333L32.1663 59.3333V16.6667H10.833ZM10.833 11.35L-5.11173 -2.8231L-10.5003 3.23908V11.35H10.833ZM17.4997 3.85L33.4444 18.0231L38.833 11.9609V3.85H17.4997ZM16.6663 1.66667V-19.6667V1.66667ZM3.33301 1.66667L3.33301 -19.6667L3.33301 1.66667ZM2.49967 2.5H-18.8337H2.49967ZM2.49967 3.85H-18.8337V11.9609L-13.4451 18.0231L2.49967 3.85ZM9.16634 11.35H30.4997V3.23908L25.1111 -2.8231L9.16634 11.35ZM25.2997 2.93333L20.2997 -0.816667L-5.30033 33.3167L-0.300328 37.0667L25.2997 2.93333ZM28.833 16.25V11.9833H-13.8337V16.25H28.833ZM23.4444 -2.18976L16.7777 -9.68976L-15.1117 18.6564L-8.44506 26.1564L23.4444 -2.18976ZM22.1663 4.48333V2.5H-20.5003V4.48333H22.1663ZM22.1663 2.5C22.1663 7.49491 20.1821 12.2852 16.6502 15.8172L-13.5197 -14.3527C-17.9893 -9.88309 -20.5003 -3.82099 -20.5003 2.5L22.1663 2.5ZM16.6502 15.8172C13.1183 19.3491 8.32792 21.3333 3.33301 21.3333L3.33301 -21.3333C-2.98799 -21.3333 -9.05009 -18.8223 -13.5197 -14.3527L16.6502 15.8172ZM3.33301 21.3333H16.6663V-21.3333H3.33301L3.33301 21.3333ZM16.6663 21.3333C11.6714 21.3333 6.8811 19.3491 3.34916 15.8172L33.5191 -14.3527C29.0494 -18.8223 22.9873 -21.3333 16.6663 -21.3333L16.6663 21.3333ZM3.34916 15.8172C-0.182779 12.2852 -2.16699 7.4949 -2.16699 2.5L40.4997 2.5C40.4997 -3.82099 37.9887 -9.88309 33.5191 -14.3527L3.34916 15.8172ZM-2.16699 2.5V4.48333H40.4997V2.5H-2.16699ZM3.22161 -9.68976L-3.44506 -2.18976L28.4444 26.1564L35.1111 18.6564L3.22161 -9.68976ZM-8.83366 11.9833V20H33.833V11.9833H-8.83366ZM-3.63366 32.4833L-1.96699 33.7333L23.633 -0.4L21.9663 -1.65L-3.63366 32.4833ZM32.1663 16.6667V11.35H-10.5003V16.6667H32.1663ZM26.7777 25.5231L33.4444 18.0231L1.55494 -10.3231L-5.11173 -2.8231L26.7777 25.5231ZM38.833 3.85V2.5H-3.83366V3.85H38.833ZM38.833 2.5C38.833 -3.37892 36.4976 -9.01711 32.3405 -13.1742L2.17065 16.9957C-1.67388 13.1512 -3.83366 7.9369 -3.83366 2.5H38.833ZM32.3405 -13.1742C28.1835 -17.3313 22.5453 -19.6667 16.6663 -19.6667L16.6663 23C11.2294 23 6.01516 20.8402 2.17065 16.9957L32.3405 -13.1742ZM16.6663 -19.6667H3.33301V23H16.6663V-19.6667ZM3.33301 -19.6667C-2.54596 -19.6667 -8.18413 -17.3313 -12.3412 -13.1742L17.8287 16.9957C13.9842 20.8402 8.76994 23 3.33301 23L3.33301 -19.6667ZM-12.3412 -13.1742C-16.4983 -9.01714 -18.8337 -3.37896 -18.8337 2.5L23.833 2.5C23.833 7.93693 21.6732 13.1512 17.8287 16.9957L-12.3412 -13.1742ZM-18.8337 2.5V3.85H23.833V2.5H-18.8337ZM-13.4451 18.0231L-6.77839 25.5231L25.1111 -2.8231L18.4444 -10.3231L-13.4451 18.0231ZM-12.167 11.35V15.4167H30.4997V11.35H-12.167Z" fill="#5964E0" mask="url(#path-1-inside-1_501_16512)"/>
                                     </g>
                                     <defs>
-                                        <clipPath id="clip0_501_16512">
-                                            <rect width="20" height="20" fill="white" />
-                                        </clipPath>
+                                    <clipPath id="clip0_501_16512">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
                                     </defs>
-                                </svg>
-
+                                    </svg>
+                                    
                                 <p class="mb-0 fs-6 fw-bold text-clr-primary">Filter</p>
-                                <span
-                                    class="FilterCountBox position-absolute top-0 end-0 bg-clr-orange rounded-circle text-white"
-                                    id="count-checked-checkboxes"
+                                <span class="FilterCountBox position-absolute top-0 end-0 bg-clr-orange rounded-circle text-white" id="count-checked-checkboxes"
                                     style="display: none; width: 12px; height: 12px; font-size: 9px; line-height: 12px;">0</span>
                             </button>
 
-                            <ul class="dropdown-menu filterDropdown allSelectWrapper"
-                                aria-labelledby="dropdownMenuButton1">
+                            <ul class="dropdown-menu filterDropdown allSelectWrapper" aria-labelledby="dropdownMenuButton1">
                                 <li>
                                     <p class="fs-14 fw-semi-bold text-clr-smokydeep pt-2 px-3 mb-1 mt-2">Source</p>
                                 </li>
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status1">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status1">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-shopify.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-shopify.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status1">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status1">
                                                 Shopify
                                             </label>
                                         </div>
@@ -363,15 +349,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status2">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status2">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-wix.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-wix.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status2">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status2">
                                                 Wix
                                             </label>
                                         </div>
@@ -381,15 +363,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status3">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status3">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-airbnb.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-airbnb.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status3">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status3">
                                                 Airbnb
                                             </label>
                                         </div>
@@ -399,15 +377,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status4">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status4">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-qiwi.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-qiwi.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status4">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status4">
                                                 Qiwi
                                             </label>
                                         </div>
@@ -417,15 +391,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status5">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status5">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-product_hunt.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-product_hunt.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status5">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status5">
                                                 Product hunt
                                             </label>
                                         </div>
@@ -434,15 +404,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status6">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status6">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-envato.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-envato.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status6">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status6">
                                                 Envato
                                             </label>
                                         </div>
@@ -451,15 +417,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status7">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status7">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-ms_xbox.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-ms_xbox.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status7">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status7">
                                                 MS Xbox
                                             </label>
                                         </div>
@@ -468,15 +430,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status8">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status8">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-askfm.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-askfm.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status8">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status8">
                                                 Askfm
                                             </label>
                                         </div>
@@ -485,15 +443,11 @@
                                 <li>
                                     <a class="dropdown-item d-block" href="#">
                                         <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status9">
+                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox" value="" id="Status9">
                                             <div class="ms-1">
-                                                <img src="assets/icons/filter-amazon.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
+                                                <img src="assets/icons/filter-amazon.svg" class="img-fluid d-flex flex-shrink-0" alt="">
                                             </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status9">
+                                            <label class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block" for="Status9">
                                                 Amazon
                                             </label>
                                         </div>

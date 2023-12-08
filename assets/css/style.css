@@ -211,7 +211,7 @@ main#dashboard { padding-top: calc(var(--header-height) + var(--theme-gutter)); 
 
 .filterBtn { padding: 0 30px; height: 50px; border: 2px solid var(--clr-primary); border-radius: 8px; -webkit-transition: 0.3s all linear; transition: 0.3s all linear; cursor: pointer; background-color: #fff; }
 .filterBtn:hover { border-color: var(--clr-primary); background-color: var(--clr-primary) !important; }
-.filterBtn:hover p { color: #fff; }
+.filterBtn:hover p { color: #fff !important; }
 .filterBtn:hover svg * { fill: #fff; }
 .filterBtn.bg-clr-primary-shade { background-color: #f3f4ff; }
 
