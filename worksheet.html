@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
@@ -179,7 +180,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="submissions.html">
                             <svg class=" flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.875 16.125H11.375V12.625H7.875V16.125ZM7.875 11.375H11.375V7.875H7.875V11.375ZM12.625 16.125H16.125V12.625H12.625V16.125ZM12.625 11.375H16.125V7.875H12.625V11.375ZM4.3077 19.5C3.80257 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.3077C2.5 5.80257 2.675 5.375 3.025 5.025C3.375 4.675 3.80257 4.5 4.3077 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80257 21.5 6.3077V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.3077ZM4.3077 18H19.6923C19.7692 18 19.8397 17.9679 19.9038 17.9038C19.9679 17.8397 20 17.7692 20 17.6923V6.3077C20 6.23077 19.9679 6.16024 19.9038 6.09613C19.8397 6.03203 19.7692 5.99998 19.6923 5.99998H4.3077C4.23077 5.99998 4.16024 6.03203 4.09613 6.09613C4.03202 6.16024 3.99998 6.23077 3.99998 6.3077V17.6923C3.99998 17.7692 4.03202 17.8397 4.09613 17.9038C4.16024 17.9679 4.23077 18 4.3077 18Z" fill="#999A9F"/>
                                 </svg>
@@ -418,18 +419,16 @@
                         </div>
 
                      
-
-                        <a href="#"
-                                class=" radius-8 createBtn d-flex align-items-center text-decoration-none fw-bold text-white">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="path-1-inside-1_501_15169" fill="white">
-                                    <path d="M10.8333 9.16667V5H9.16667V9.16667H5V10.8333H9.16667V15H10.8333V10.8333H15V9.16667H10.8333Z"/>
-                                    </mask>
-                                    <path d="M10.8333 9.16667V5H9.16667V9.16667H5V10.8333H9.16667V15H10.8333V10.8333H15V9.16667H10.8333Z" fill="#374957"/>
-                                    <path d="M10.8333 9.16667H-10.5V30.5H10.8333V9.16667ZM10.8333 5H32.1667V-16.3333H10.8333V5ZM9.16667 5V-16.3333H-12.1667V5H9.16667ZM9.16667 9.16667V30.5H30.5V9.16667H9.16667ZM5 9.16667V-12.1667H-16.3333V9.16667H5ZM5 10.8333H-16.3333V32.1667H5V10.8333ZM9.16667 10.8333H30.5V-10.5H9.16667V10.8333ZM9.16667 15H-12.1667V36.3333H9.16667V15ZM10.8333 15V36.3333H32.1667V15H10.8333ZM10.8333 10.8333V-10.5H-10.5V10.8333H10.8333ZM15 10.8333V32.1667H36.3333V10.8333H15ZM15 9.16667H36.3333V-12.1667H15V9.16667ZM32.1667 9.16667V5H-10.5V9.16667H32.1667ZM10.8333 -16.3333H9.16667V26.3333H10.8333V-16.3333ZM-12.1667 5V9.16667H30.5V5H-12.1667ZM9.16667 -12.1667H5V30.5H9.16667V-12.1667ZM-16.3333 9.16667V10.8333H26.3333V9.16667H-16.3333ZM5 32.1667H9.16667V-10.5H5V32.1667ZM-12.1667 10.8333V15H30.5V10.8333H-12.1667ZM9.16667 36.3333H10.8333V-6.33333H9.16667V36.3333ZM32.1667 15V10.8333H-10.5V15H32.1667ZM10.8333 32.1667H15V-10.5H10.8333V32.1667ZM36.3333 10.8333V9.16667H-6.33333V10.8333H36.3333ZM15 -12.1667H10.8333V30.5H15V-12.1667Z" fill="white" mask="url(#path-1-inside-1_501_15169)"/>
-                                    </svg>
-                            <span class="fs-6 ps-1">Create New Worksheet</span>
-                            </a>
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#add-new-sessions" class=" radius-8 createBtn d-flex align-items-center text-decoration-none fw-bold text-white">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_501_15169" fill="white">
+                                    <path d="M10.8333 9.16667V5H9.16667V9.16667H5V10.8333H9.16667V15H10.8333V10.8333H15V9.16667H10.8333Z"></path>
+                                </mask>
+                                <path d="M10.8333 9.16667V5H9.16667V9.16667H5V10.8333H9.16667V15H10.8333V10.8333H15V9.16667H10.8333Z" fill="#374957"></path>
+                                <path d="M10.8333 9.16667H-10.5V30.5H10.8333V9.16667ZM10.8333 5H32.1667V-16.3333H10.8333V5ZM9.16667 5V-16.3333H-12.1667V5H9.16667ZM9.16667 9.16667V30.5H30.5V9.16667H9.16667ZM5 9.16667V-12.1667H-16.3333V9.16667H5ZM5 10.8333H-16.3333V32.1667H5V10.8333ZM9.16667 10.8333H30.5V-10.5H9.16667V10.8333ZM9.16667 15H-12.1667V36.3333H9.16667V15ZM10.8333 15V36.3333H32.1667V15H10.8333ZM10.8333 10.8333V-10.5H-10.5V10.8333H10.8333ZM15 10.8333V32.1667H36.3333V10.8333H15ZM15 9.16667H36.3333V-12.1667H15V9.16667ZM32.1667 9.16667V5H-10.5V9.16667H32.1667ZM10.8333 -16.3333H9.16667V26.3333H10.8333V-16.3333ZM-12.1667 5V9.16667H30.5V5H-12.1667ZM9.16667 -12.1667H5V30.5H9.16667V-12.1667ZM-16.3333 9.16667V10.8333H26.3333V9.16667H-16.3333ZM5 32.1667H9.16667V-10.5H5V32.1667ZM-12.1667 10.8333V15H30.5V10.8333H-12.1667ZM9.16667 36.3333H10.8333V-6.33333H9.16667V36.3333ZM32.1667 15V10.8333H-10.5V15H32.1667ZM10.8333 32.1667H15V-10.5H10.8333V32.1667ZM36.3333 10.8333V9.16667H-6.33333V10.8333H36.3333ZM15 -12.1667H10.8333V30.5H15V-12.1667Z" fill="white" mask="url(#path-1-inside-1_501_15169)"></path>
+                            </svg>
+                            <span class="fs-6 ps-1"> Create New Worksheet </span>
+                        </a>
                         </div>
                     </div>
 
@@ -481,6 +480,8 @@
                                                     <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
                                                 </svg>
                                             </div>
+
+                                            
                                         </th>
                                         <th class="text-nowrap">
                                             <div class="d-flex align-items-center gap-2 justify-content-start pe-5">
@@ -545,12 +546,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -590,12 +596,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -635,12 +646,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -680,12 +696,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -725,12 +746,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -770,12 +796,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -815,12 +846,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -860,12 +896,17 @@
                                                 <button class="btn pe-2 bg-transparent " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                  <img src="assets/img/fi-ss-menu-dots-vertical.png" alt="" class="img-fluid">
                                                 </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Rename</a></li>
-                                                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                                                  <li><a class="dropdown-item" href="#">Copy link</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                <ul class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 40px);">
+                                                    <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item duplicate-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-duplicate-modal">
+                                                            Duplicate
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
+                                                    <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -939,6 +980,126 @@
             </div>
     </main>
     <!-- dashboard -->
+
+
+    
+    <!-- modal -->
+    <!-- modal-wrapper -->
+    <div class="modal-wrapper">
+
+        <!-- session-delete-modal -->
+        <div class="modal fade" id="session-delete-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content radius-8 py-4">
+                    <div class="modal-body">
+                        <div class="modal-info text-center">
+                            <img src="assets/img/success-icon.svg" alt="icon" class="img-fluid">
+                            <h3 class="fs-4 fw-bold text-dark-1 mb-2 mt-3">
+                                Success
+                            </h3>
+                            <p class="fs-6 fw-normal text-dark-3 mb-4 pb-2">
+                                Your Sessions has been deleted.
+                            </p>
+                            <a href="index.html"
+                                class="text-decoration-none fw-bold fs-6 text-clr-primary bg-dark-7 px-4 py-2 rounded">
+                                Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- session-delete-modal -end -->
+
+        <!-- session-duplicate-modal -->
+        <div class="modal fade" id="session-duplicate-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content radius-8 py-4">
+                    <div class="modal-body">
+                        <div class="modal-info text-center">
+                            <img src="assets/img/duplicate1.svg" alt="icon" class="img-fluid">
+                            <h3 class="fs-4 fw-bold text-dark-1 mb-2 mt-3">
+                                Duplicate Success
+                            </h3>
+                            <p class="fs-6 fw-normal text-dark-3 mb-4 pb-2">
+                                Your Session has been Duplicate Success.
+                            </p>
+                            <a href="index.html"
+                                class="text-decoration-none fw-bold fs-6 text-clr-primary bg-dark-7 px-4 py-2 rounded">
+                                Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ession-duplicate-modal -end -->
+
+    </div>
+    <!-- modal-wrapper -end -->
+    <!-- modal -end -->
+
+    <!-- off-canvas -->
+
+    <!-- add-new-sessions off canvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="add-new-sessions">
+        <div class="offcanvas-header pt-4 px-4">
+            <h5 class="offcanvas-title fs-4 fw-semi-bold text-clr-dark">
+                Create New Worksheet
+            </h5>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between h-100 px-4">
+            <form>
+                <fieldset class="mb-4">
+                    <legend>Worksheet name</legend>
+                    <input type="text" class="form-control" placeholder="Enter">
+                </fieldset>
+
+               
+
+                <fieldset class="mb-4">
+                    <legend>Select class</legend>
+                    <select class="form-select text-clr-gray border-0">
+                        <option selected>Select Class</option>
+                        <option value="1">Class One</option>
+                        <option value="2">Class Two</option>
+                        <option value="3">Class Three</option>
+                    </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                    <legend>Creation Date</legend>
+                    <input type="text" class="datepicker form-control text-clr-dark py-0" placeholder="Nov28, 02:00pm">
+                </fieldset>
+                <div class="d-flex gap-3 align-items-center mb-4 d-none">
+                    <fieldset class="w-100">
+                        <legend class="fs-12">Start Date</legend>
+                        <input type="text" class="form-control text-clr-dark p-0" id="input1" size="10"
+                            placeholder="12/25/2023">
+                    </fieldset>
+                    <fieldset class="w-100">
+                        <legend class="fs-12">End Date</legend>
+                        <input type=" text" class="form-control text-clr-dark p-0" id="input2" size="10"
+                            placeholder="12/30/2023">
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="btn-wrap d-flex justify-content-between">
+                <button type="button"
+                    class="btn-cancel border-btn bg-white perple-border-1 text-clr-primary px-4 py-2 rounded-1"
+                    data-bs-dismiss="offcanvas">
+                    Cancel
+                </button>
+                <button type="button" class="btn-save bg-btn bg-clr-primary text-white px-4 py-2 rounded-1"
+                    data-bs-dismiss="offcanvas">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- add-new-sessions off canvas -end -->
+    <!-- off-canvas -end -->
+
 
 
 
