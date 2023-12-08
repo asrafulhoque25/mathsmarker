@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/afzal.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
@@ -188,7 +189,7 @@
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="submissions.html">
                             <svg class=" flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -278,7 +279,7 @@
 
     <!-- dashboard -->
     <main id="dashboard">
-        <div class="container-fluid pe-4 pt-3 pb-5">
+        <div class="container-fluid pe-4 pt-3">
             <div class="chatbot-area bg-white radius-8">
                 <!-- Chat -->
                 <div class="tab-pane">
@@ -734,6 +735,14 @@
                                             </div>
                                         </div>
                                         <main class="chatbot-live px-3 pt-4">
+                                            <div
+                                                class="conversation-time d-flex gap-2 align-items-center p-3 pb-4 pt-3">
+                                                <div class="line"></div>
+                                                <p class="time mb-0 text-nowrap">
+                                                    Monday, December 04, 2023
+                                                </p>
+                                                <div class="line"></div>
+                                            </div>
                                             <div id="chat" class="conv-form-wrapper">
                                                 <ul class="continueChat list-unstyled mb-0">
                                                     <li class="persionOne mb-4">
@@ -796,10 +805,12 @@
                                                     <li class="reply-chat mb-4">
                                                         <div class="d-flex align-items-end gap-2 justify-content-end">
                                                             <p class="text-end mb-0 d-inline-flex flex-column">
-                                                                <span class="chat-text fs-12 fw-medium text-dark-1 bg-dark-7 px-3 py-1 mb-1 d-inline">
+                                                                <span
+                                                                    class="chat-text fs-12 fw-medium text-dark-1 bg-dark-7 px-3 py-1 mb-1 d-inline">
                                                                     Bibendum
                                                                 </span>
-                                                                <span class="chat-text gain-chat-text fs-12 fw-medium text-dark-1 bg-dark-7 px-3 py-1 mb-1 d-inline">
+                                                                <span
+                                                                    class="chat-text gain-chat-text fs-12 fw-medium text-dark-1 bg-dark-7 px-3 py-1 mb-1 d-inline">
                                                                     Magna Malesuada
                                                                 </span>
                                                                 <span class="fs-12 text-clr-gray d-inline">
@@ -807,8 +818,27 @@
                                                                 </span>
                                                             </p>
                                                             <span class="person-pic flex-shrink-0 ">
-                                                                <img src="assets/img/chatbook-user5.png" alt="img" class="img-fluid">
+                                                                <img src="assets/img/chatbook-user5.png" alt="img"
+                                                                    class="img-fluid">
                                                             </span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="persionOne mb-4">
+                                                        <div class="d-flex align-items-start gap-2">
+                                                            <span class="person-pic flex-shrink-0 ">
+                                                                <img src="assets/img/chatbook-user1.png" alt="img"
+                                                                    class="img-fluid">
+                                                            </span>
+                                                            <p class="">
+                                                                <span
+                                                                    class="chat-text fs-12 fw-medium text-dark-1 bg-dark-7 px-3 py-1 mb-1 d-block">
+                                                                    Hello
+                                                                </span>
+                                                                <span class="fs-12 text-clr-gray d-block">
+                                                                    24:12 am
+                                                                </span>
+                                                            </p>
                                                         </div>
                                                     </li>
 
@@ -839,7 +869,7 @@
                                                                 </div>
                                                                 <div class="send">
                                                                     <button class="btn p-0 flex-shrink-0" type="button">
-                                                                        <img src="assets/img/send.png" alt="icon"
+                                                                        <img src="assets/img/send-sms.svg" alt="icon"
                                                                             class="img-fluid">
                                                                     </button>
                                                                 </div>
@@ -847,6 +877,7 @@
                                                         </div>
                                                     </form>
                                                 </div>
+                                            </div>
                                         </main>
                                     </div>
                                 </div>

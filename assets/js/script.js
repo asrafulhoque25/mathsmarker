@@ -250,11 +250,11 @@ $(document).ready(function () {
 
     
     // datepicker init
-    $(function () {
-        if ($('.datepicker').length) {
-            $('.datepicker').datepicker();
-        }
-    })
+    // $(function () {
+    //     if ($('.datepicker').length) {
+    //         $('.datepicker').datepicker();
+    //     }
+    // })
 
 
     //book toggle 
