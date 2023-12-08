@@ -1,3 +1,10 @@
+:root {
+  --clr-primary: #5964e0;
+}
+
+.text-clr-primary {
+  color: var(--clr-primary) !important;
+}
 
 // seassion style
 
