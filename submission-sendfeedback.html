@@ -57,18 +57,11 @@
             <div class="row header-row align-items-center">
                 <div class="col-6 col-sm-5">
                     <div class="header-left d-flex align-items-center gap-3">
-                        <span class="page-title fw-semi-bold text-dark me-2 mb-0">
-                            <button type="button" class="btn btn-sidebar-toggle btn-sm p-0 mb-1">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.0481 5.41348V12.5865L9.45195 8.99998L13.0481 5.41348ZM15.6923 17.5C16.191 17.5 16.617 17.3233 16.9702 16.9701C17.3234 16.6169 17.5 16.191 17.5 15.6923V2.3077C17.5 1.80898 17.3234 1.38302 16.9702 1.02982C16.617 0.676608 16.191 0.5 15.6923 0.5H2.30775C1.80903 0.5 1.38307 0.676608 1.02987 1.02982C0.676655 1.38302 0.500048 1.80898 0.500048 2.3077V15.6923C0.500048 16.191 0.676655 16.6169 1.02987 16.9701C1.38307 17.3233 1.80903 17.5 2.30775 17.5H15.6923ZM5.00002 16H2.00002V2.3077C2.00002 2.23077 2.03207 2.16024 2.09618 2.09613C2.16029 2.03203 2.23082 1.99998 2.30775 1.99998H5.00002V16ZM6.5 16V1.99998H15.6923C15.7692 1.99998 15.8398 2.03203 15.9039 2.09613C15.968 2.16024 16 2.23077 16 2.3077V15.6923C16 15.7692 15.968 15.8397 15.9039 15.9038C15.8398 15.9679 15.7692 16 15.6923 16H6.5Z"
-                                        fill="#4D4E58" />
-                                </svg>
-
-                            </button>
+                        <span class="page-logo fw-semi-bold text-dark me-2 mb-0">
+                            <img src="assets/img/logo-dark.svg" class="img-fluid" style="max-width: 200ox; width: 100%;"
+                                alt="">
                         </span>
-                        <form method="POST" action="#" class="flex-grow-1 d-none d-lg-block">
+                        <form method="POST" action="#" class="flex-grow-1 d-none d-lg-block  ms-4 ps-4">
                             <input type="text" class="form-control border-0 form-search" placeholder="Search" />
                         </form>
                     </div>
@@ -145,769 +138,290 @@
 
 
     <!-- dashboard -->
-    <main>
-        <div class="container-fluid pe-4 pt-3 pb-5">
-            <div class="tableInfo bg-white radius-8">
-
-                <div class="TableHeader d-flex align-items-center justify-content-between flex-wrap gap-3 px-4 pt-4">
-                    <h3 class="text-clr-dark fs-24 fw-semi-bold">Submissions</h3>
-
-                    <div class="d-flex align-items-center gap-3 tableContrl flex-wrap">
-
-                        <a href="#" class="contact-edit" style="display: none;" data-bs-toggle="modal"
-                            data-bs-target="#contactTableRowDelete">
-                            <img src="assets/img/trash.svg" class="img-fluid" alt="">
-                        </a>
-
-                        <div class="searchControl">
-                            <input type="text" class="mysearchInput form-control" placeholder="Search" id="myInput"
-                                onkeyup="myFunction()">
-                        </div>
-
-                        <div class=" dropdown ContactFilterDropdown position-relative" id="checkboxes-count-filter">
-                            <button type="button"
-                                class="d-flex align-items-center justify-content-center gap-2 filterBtn filterdropdown-toggle"
-                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+    <main class="submission-details-main px-4 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="submission-sidebar bg-white radius-8 ">
+                        <div class="solution-sidebar-top">
+                            <a href="submissions.html" class="text-decoration-none d-flex gap-2 align-items-center mb-3">
+                                <svg width="9" height="8" viewBox="0 0 9 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_501_16512)">
-                                        <mask id="path-1-inside-1_501_16512" fill="white">
-                                            <path
-                                                d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z" />
-                                        </mask>
+                                    <mask id="path-1-inside-1_701_12264" fill="white">
                                         <path
-                                            d="M12.4997 20L7.49967 16.25V11.9833L0.833008 4.48333V2.5C0.833008 1.83696 1.0964 1.20107 1.56524 0.732233C2.03408 0.263392 2.66997 0 3.33301 0L16.6663 0C17.3294 0 17.9653 0.263392 18.4341 0.732233C18.9029 1.20107 19.1663 1.83696 19.1663 2.5V4.48333L12.4997 11.9833V20ZM9.16634 15.4167L10.833 16.6667V11.35L17.4997 3.85V2.5C17.4997 2.27899 17.4119 2.06702 17.2556 1.91074C17.0993 1.75446 16.8874 1.66667 16.6663 1.66667H3.33301C3.11199 1.66667 2.90003 1.75446 2.74375 1.91074C2.58747 2.06702 2.49967 2.27899 2.49967 2.5V3.85L9.16634 11.35V15.4167Z"
-                                            fill="#5964E0" />
-                                        <path
-                                            d="M12.4997 20L-0.300328 37.0667L33.833 62.6667V20H12.4997ZM7.49967 16.25H-13.8337V26.9167L-5.30033 33.3167L7.49967 16.25ZM7.49967 11.9833H28.833V3.87241L23.4444 -2.18976L7.49967 11.9833ZM0.833008 4.48333H-20.5003V12.5943L-15.1117 18.6564L0.833008 4.48333ZM0.833008 2.5H-20.5003H0.833008ZM3.33301 0L3.33301 -21.3333L3.33301 0ZM16.6663 0V-21.3333V0ZM19.1663 2.5L40.4997 2.5L19.1663 2.5ZM19.1663 4.48333L35.1111 18.6564L40.4997 12.5943V4.48333H19.1663ZM12.4997 11.9833L-3.44506 -2.18976L-8.83366 3.87241V11.9833H12.4997ZM9.16634 15.4167H-12.167V26.0833L-3.63366 32.4833L9.16634 15.4167ZM10.833 16.6667L-1.96699 33.7333L32.1663 59.3333V16.6667H10.833ZM10.833 11.35L-5.11173 -2.8231L-10.5003 3.23908V11.35H10.833ZM17.4997 3.85L33.4444 18.0231L38.833 11.9609V3.85H17.4997ZM16.6663 1.66667V-19.6667V1.66667ZM3.33301 1.66667L3.33301 -19.6667L3.33301 1.66667ZM2.49967 2.5H-18.8337H2.49967ZM2.49967 3.85H-18.8337V11.9609L-13.4451 18.0231L2.49967 3.85ZM9.16634 11.35H30.4997V3.23908L25.1111 -2.8231L9.16634 11.35ZM25.2997 2.93333L20.2997 -0.816667L-5.30033 33.3167L-0.300328 37.0667L25.2997 2.93333ZM28.833 16.25V11.9833H-13.8337V16.25H28.833ZM23.4444 -2.18976L16.7777 -9.68976L-15.1117 18.6564L-8.44506 26.1564L23.4444 -2.18976ZM22.1663 4.48333V2.5H-20.5003V4.48333H22.1663ZM22.1663 2.5C22.1663 7.49491 20.1821 12.2852 16.6502 15.8172L-13.5197 -14.3527C-17.9893 -9.88309 -20.5003 -3.82099 -20.5003 2.5L22.1663 2.5ZM16.6502 15.8172C13.1183 19.3491 8.32792 21.3333 3.33301 21.3333L3.33301 -21.3333C-2.98799 -21.3333 -9.05009 -18.8223 -13.5197 -14.3527L16.6502 15.8172ZM3.33301 21.3333H16.6663V-21.3333H3.33301L3.33301 21.3333ZM16.6663 21.3333C11.6714 21.3333 6.8811 19.3491 3.34916 15.8172L33.5191 -14.3527C29.0494 -18.8223 22.9873 -21.3333 16.6663 -21.3333L16.6663 21.3333ZM3.34916 15.8172C-0.182779 12.2852 -2.16699 7.4949 -2.16699 2.5L40.4997 2.5C40.4997 -3.82099 37.9887 -9.88309 33.5191 -14.3527L3.34916 15.8172ZM-2.16699 2.5V4.48333H40.4997V2.5H-2.16699ZM3.22161 -9.68976L-3.44506 -2.18976L28.4444 26.1564L35.1111 18.6564L3.22161 -9.68976ZM-8.83366 11.9833V20H33.833V11.9833H-8.83366ZM-3.63366 32.4833L-1.96699 33.7333L23.633 -0.4L21.9663 -1.65L-3.63366 32.4833ZM32.1663 16.6667V11.35H-10.5003V16.6667H32.1663ZM26.7777 25.5231L33.4444 18.0231L1.55494 -10.3231L-5.11173 -2.8231L26.7777 25.5231ZM38.833 3.85V2.5H-3.83366V3.85H38.833ZM38.833 2.5C38.833 -3.37892 36.4976 -9.01711 32.3405 -13.1742L2.17065 16.9957C-1.67388 13.1512 -3.83366 7.9369 -3.83366 2.5H38.833ZM32.3405 -13.1742C28.1835 -17.3313 22.5453 -19.6667 16.6663 -19.6667L16.6663 23C11.2294 23 6.01516 20.8402 2.17065 16.9957L32.3405 -13.1742ZM16.6663 -19.6667H3.33301V23H16.6663V-19.6667ZM3.33301 -19.6667C-2.54596 -19.6667 -8.18413 -17.3313 -12.3412 -13.1742L17.8287 16.9957C13.9842 20.8402 8.76994 23 3.33301 23L3.33301 -19.6667ZM-12.3412 -13.1742C-16.4983 -9.01714 -18.8337 -3.37896 -18.8337 2.5L23.833 2.5C23.833 7.93693 21.6732 13.1512 17.8287 16.9957L-12.3412 -13.1742ZM-18.8337 2.5V3.85H23.833V2.5H-18.8337ZM-13.4451 18.0231L-6.77839 25.5231L25.1111 -2.8231L18.4444 -10.3231L-13.4451 18.0231ZM-12.167 11.35V15.4167H30.4997V11.35H-12.167Z"
-                                            fill="#5964E0" mask="url(#path-1-inside-1_501_16512)" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_501_16512">
-                                            <rect width="20" height="20" fill="white" />
-                                        </clipPath>
-                                    </defs>
+                                            d="M8.66638 3.33331H1.99972L4.19505 1.13798L3.25238 0.195312L0.390382 3.05731C0.14042 3.30735 0 3.64643 0 3.99998C0 4.35353 0.14042 4.69261 0.390382 4.94265L3.25238 7.80465L4.19505 6.86198L1.99972 4.66665H8.66638V3.33331Z" />
+                                    </mask>
+                                    <path
+                                        d="M8.66638 3.33331H1.99972L4.19505 1.13798L3.25238 0.195312L0.390382 3.05731C0.14042 3.30735 0 3.64643 0 3.99998C0 4.35353 0.14042 4.69261 0.390382 4.94265L3.25238 7.80465L4.19505 6.86198L1.99972 4.66665H8.66638V3.33331Z"
+                                        fill="#374957" />
+                                    <path
+                                        d="M8.66638 3.33331H29.9997V-18H8.66638V3.33331ZM1.99972 3.33331L-13.0852 -11.7516L-49.5035 24.6666H1.99972V3.33331ZM4.19505 1.13798L19.28 16.2229L34.3649 1.13797L19.28 -13.947L4.19505 1.13798ZM3.25238 0.195312L18.3373 -14.8896L3.25238 -29.9746L-11.8326 -14.8896L3.25238 0.195312ZM0.390382 3.05731L-14.6946 -12.0276L-14.6968 -12.0254L0.390382 3.05731ZM0 3.99998L21.3333 3.99998L0 3.99998ZM0.390382 4.94265L-14.6968 20.0253L-14.6946 20.0276L0.390382 4.94265ZM3.25238 7.80465L-11.8326 22.8896L3.25238 37.9745L18.3373 22.8896L3.25238 7.80465ZM4.19505 6.86198L19.28 21.9469L34.3649 6.86197L19.28 -8.22297L4.19505 6.86198ZM1.99972 4.66665V-16.6667H-49.5035L-13.0852 19.7516L1.99972 4.66665ZM8.66638 4.66665V26H29.9997V4.66665H8.66638ZM8.66638 -18H1.99972V24.6666H8.66638V-18ZM17.0847 18.4183L19.28 16.2229L-10.8899 -13.947L-13.0852 -11.7516L17.0847 18.4183ZM19.28 -13.947L18.3373 -14.8896L-11.8326 15.2803L-10.8899 16.2229L19.28 -13.947ZM-11.8326 -14.8896L-14.6946 -12.0276L15.4753 18.1423L18.3373 15.2803L-11.8326 -14.8896ZM-14.6968 -12.0254C-18.9462 -7.77473 -21.3333 -2.01041 -21.3333 3.99998L21.3333 3.99998C21.3333 9.30326 19.227 14.3894 15.4776 18.14L-14.6968 -12.0254ZM-21.3333 3.99998C-21.3333 10.0104 -18.9462 15.7747 -14.6968 20.0253L15.4776 -10.14C19.227 -6.38947 21.3333 -1.3033 21.3333 3.99998L-21.3333 3.99998ZM-14.6946 20.0276L-11.8326 22.8896L18.3373 -7.28029L15.4753 -10.1423L-14.6946 20.0276ZM18.3373 22.8896L19.28 21.9469L-10.8899 -8.22296L-11.8326 -7.28029L18.3373 22.8896ZM19.28 -8.22297L17.0847 -10.4183L-13.0852 19.7516L-10.8899 21.9469L19.28 -8.22297ZM1.99972 26H8.66638V-16.6667H1.99972V26ZM29.9997 4.66665V3.33331H-12.667V4.66665H29.9997Z"
+                                        fill="#5964E0" mask="url(#path-1-inside-1_701_12264)" />
                                 </svg>
 
-                                <p class="mb-0 fs-6 fw-bold text-clr-primary">Filter</p>
-                                <span
-                                    class="FilterCountBox position-absolute top-0 end-0 bg-clr-orange rounded-circle text-white"
-                                    id="count-checked-checkboxes"
-                                    style="display: none; width: 12px; height: 12px; font-size: 9px; line-height: 12px;">0</span>
-                            </button>
-
-                            <ul class="dropdown-menu filterDropdown allSelectWrapper"
-                                aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <p class="fs-14 fw-semi-bold text-clr-smokydeep pt-2 px-3 mb-1 mt-2">Source</p>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status1">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-shopify.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status1">
-                                                Shopify
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status2">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-wix.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status2">
-                                                Wix
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status3">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-airbnb.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status3">
-                                                Airbnb
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status4">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-qiwi.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status4">
-                                                Qiwi
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status5">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-product_hunt.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status5">
-                                                Product hunt
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status6">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-envato.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status6">
-                                                Envato
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status7">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-ms_xbox.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status7">
-                                                MS Xbox
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status8">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-askfm.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status8">
-                                                Askfm
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-block" href="#">
-                                        <div class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input d-flex flex-shrink-0" type="checkbox"
-                                                value="" id="Status9">
-                                            <div class="ms-1">
-                                                <img src="assets/icons/filter-amazon.svg"
-                                                    class="img-fluid d-flex flex-shrink-0" alt="">
-                                            </div>
-                                            <label
-                                                class="form-check-label fs-14 lh-17 fw-medium text-clr-smoky w-100 d-block"
-                                                for="Status9">
-                                                Amazon
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                                <p class=" text-clr-primary fs-14 fw-bold mb-0">Back</p>
+                            </a>
+                            <h4 class="fs-18 fw-bold text-dark-1">Questions</h4>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Page Table  -->
-                <div class="tableWrapper mt-4">
-
-                    <form action="#" method="post" id="checkboxes-counting" class="table-responsive"
-                        accept-charset="UTF-8">
-                        <table class="checkTable table table-borderless" id="myTable">
-                            <thead>
-                                <tr class="checkWrapper allSelectWrapper">
-                                    <th class="text-nowrap ps-3">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span>
-                                                Students name
-                                            </span>
-                                            <svg class="mt-1" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 6H4L7 2L10 6Z" fill="#9B95A9" />
-                                                <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span>
-                                                Session
-                                            </span>
-                                            <svg class="mt-1" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 6H4L7 2L10 6Z" fill="#9B95A9" />
-                                                <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span>
-                                                Last active
-                                            </span>
-                                            <svg class="mt-1" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 6H4L7 2L10 6Z" fill="#9B95A9" />
-                                                <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <div class="d-flex align-items-center gap-2 justify-content-start pe-5">
-                                            <span>
-                                                Completion
-                                            </span>
-                                            <svg class="mt-1" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 6H4L7 2L10 6Z" fill="#9B95A9" />
-                                                <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <div class="d-flex align-items-center gap-2 justify-content-start pe-5">
-                                            <span>
-                                                Average Marks
-                                            </span>
-                                            <svg class="mt-1" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10 6H4L7 2L10 6Z" fill="#9B95A9" />
-                                                <path d="M4 8H10L7 12L4 8Z" fill="#9B95A9" />
-                                            </svg>
-                                        </div>
-                                    </th>
-                                    <th class="text-nowrap">
-
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <div class="d-flex align-items-center gap-2 justify-content-end ">
-                                            <span>Action</span>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-
-
-                            <tbody>
-
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
+                        <div class="px-4 mt-4">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <div class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-between gap-3">
+                                        <p class="fs-14 fw-semi-bold text-dark-1 mb-0">
+                                            <span class="fs-6 text-clr-primary ff-r fw-normal pe-2">1</span>
+                                            Fill in the blank to make equation
                                         </p>
-                                    </td>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.5415 6.375H13.4582L9.00063 10.8325C8.8678 10.9653 8.68766 11.0399 8.49984 11.0399C8.31201 11.0399 8.13188 10.9653 7.99905 10.8325L3.5415 6.375Z"
+                                                fill="#374957" />
+                                        </svg>
 
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
+                                    </div>
+                                    <div class="tabNavDropdown mt-4 mb-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class=" flex-shrink-0">
+                                                <img src="assets/img/math6.svg" class="img-fluid" alt="math">
                                             </div>
+                                            <p class="mb-0 fs-14 text-dark-3 ff-r ">Ontrary to popular belief, Lorem
+                                                Ipsum is not simply random text. It has roots in a piece of classical
+                                                Latin terature from 45 BC, making it over 2000 years</p>
                                         </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
+                                        <div class="mt-3">
+                                            <img src="assets/img/math7.svg" class="img-fluid" alt="">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
+                                    </div>
+                                </div>
+                                <div class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                    aria-controls="v-pills-profile" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-between gap-3">
+                                        <p class="fs-14 fw-semi-bold text-dark-1 mb-0">
+                                            <span class="fs-6 text-clr-primary ff-r fw-normal pe-2">2</span>
+                                            Fill in the blank to make the equation true
                                         </p>
-                                    </td>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.5415 6.375H13.4582L9.00063 10.8325C8.8678 10.9653 8.68766 11.0399 8.49984 11.0399C8.31201 11.0399 8.13188 10.9653 7.99905 10.8325L3.5415 6.375Z"
+                                                fill="#374957" />
+                                        </svg>
 
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
+                                    </div>
+                                    <div class="tabNavDropdown mt-4 mb-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class=" flex-shrink-0">
+                                                <img src="assets/img/math6.svg" class="img-fluid" alt="math">
                                             </div>
+                                            <p class="mb-0 fs-14 text-dark-3 ff-r ">Ontrary to popular belief, Lorem
+                                                Ipsum is not simply random text. It has roots in a piece of classical
+                                                Latin terature from 45 BC, making it over 2000 years</p>
                                         </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
+                                        <div class="mt-3">
+                                            <img src="assets/img/math7.svg" class="img-fluid" alt="">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
+                                    </div>
+                                </div>
+                                <div class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                    aria-controls="v-pills-messages" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-between gap-3">
+                                        <p class="fs-14 fw-semi-bold text-dark-1 mb-0">
+                                            <span class="fs-6 text-clr-primary ff-r fw-normal pe-2">3</span>
+                                            Fill in the blank to make equation
                                         </p>
-                                    </td>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.5415 6.375H13.4582L9.00063 10.8325C8.8678 10.9653 8.68766 11.0399 8.49984 11.0399C8.31201 11.0399 8.13188 10.9653 7.99905 10.8325L3.5415 6.375Z"
+                                                fill="#374957" />
+                                        </svg>
 
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
+                                    </div>
+                                    <div class="tabNavDropdown mt-4 mb-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class=" flex-shrink-0">
+                                                <img src="assets/img/math6.svg" class="img-fluid" alt="math">
                                             </div>
+                                            <p class="mb-0 fs-14 text-dark-3 ff-r ">Ontrary to popular belief, Lorem
+                                                Ipsum is not simply random text. It has roots in a piece of classical
+                                                Latin terature from 45 BC, making it over 2000 years</p>
                                         </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
+                                        <div class="mt-3">
+                                            <img src="assets/img/math7.svg" class="img-fluid" alt="">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
+                                    </div>
+                                </div>
+                                <div class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                    aria-controls="v-pills-settings" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-between gap-3">
+                                        <p class="fs-14 fw-semi-bold text-dark-1 mb-0">
+                                            <span class="fs-6 text-clr-primary ff-r fw-normal pe-2">1</span>
+                                            Fill in the blank to make equation
                                         </p>
-                                    </td>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.5415 6.375H13.4582L9.00063 10.8325C8.8678 10.9653 8.68766 11.0399 8.49984 11.0399C8.31201 11.0399 8.13188 10.9653 7.99905 10.8325L3.5415 6.375Z"
+                                                fill="#374957" />
+                                        </svg>
 
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
+                                    </div>
+                                    <div class="tabNavDropdown mt-4 mb-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class=" flex-shrink-0">
+                                                <img src="assets/img/math6.svg" class="img-fluid" alt="math">
                                             </div>
+                                            <p class="mb-0 fs-14 text-dark-3 ff-r ">Ontrary to popular belief, Lorem
+                                                Ipsum is not simply random text. It has roots in a piece of classical
+                                                Latin terature from 45 BC, making it over 2000 years</p>
                                         </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
+                                        <div class="mt-3">
+                                            <img src="assets/img/math7.svg" class="img-fluid" alt="">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
-                                            </div>
-                                        </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="checkWrapper ">
-                                    <td class="text-nowrap ps-3" width="400px">
-                                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="assets/img/stImg-1.png" class="img-fluid rounded-circle" alt="">
-                                            <p class="mb-0">
-                                                Guy hawkins
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            1st Sessions
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <p class="mb-0">
-                                            11 hour ago
-                                        </p>
-                                    </td>
-
-                                    <td class="text-start text-nowrap" width="200px">
-                                        <div class="progress" style="height: 8px;">
-                                            <div class="progress-bar bg-clr-primary" role="progressbar"
-                                                style="width: 50%; height: 8px;">
-                                            </div>
-                                        </div>
-                                    </td>
-
-                                    <td class="text-start text-nowrap">
-                                        <p class="mb-0">
-                                            70%
-                                        </p>
-                                    </td>
-                                    <td class="text-start text-nowrap">
-                                        <a href="#"
-                                            class="text-decoration-none fw-bold fs-14 text-clr-primary bg-dark-7 px-4 py-2 radius-8">
-                                            View Details
-                                        </a>
-                                    </td>
-                                    <td class="text-end text-nowrap">
-                                        <div class="dropdown">
-                                            <button class="btn pe-2 bg-transparent " type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="assets/img/fi-ss-menu-dots-vertical.png" alt=""
-                                                    class="img-fluid">
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item rename-btn" href="#">Rename</a></li>
-                                                <li>
-                                                    <a class="dropdown-item duplicate-btn" href="#"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#session-duplicate-modal">
-                                                        Duplicate
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item copy-link-btn" href="#">Copy link</a></li>
-                                                <li><a class="dropdown-item edit-session-btn" href="#">Edit Session</a>
-                                                </li>
-                                                <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#session-delete-modal">Delete</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-                    </form>
-
-                    <!-- pagination -->
-                    <div
-                        class="paginationWrapper px-4 pb-4 d-flex flex-wrap align-items-center gap-2 justify-content-between mt-4 mt-md-0">
-                        <div>
-                            <p class="mb-0 text-dark-3 fs-14 fw-medium">Show result 10 out of 1000</p>
-                        </div>
-
-                        <div class="">
-                            <div class="d-flex flex-wrap align-items-center gap-3">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination flex-wrap justify-content-center mb-0">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true" class="d-flex">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9.77211 13.9965L4.01286 8.23721C3.68479 7.90903 3.50049 7.46399 3.50049 6.99996C3.50049 6.53592 3.68479 6.09088 4.01286 5.76271L9.76861 0.00695801L10.5934 0.831791L4.8377 6.58754C4.72834 6.69693 4.66691 6.84528 4.66691 6.99996C4.66691 7.15464 4.72834 7.30298 4.8377 7.41237L10.5969 13.1716L9.77211 13.9965Z"
-                                                            fill="#999A9F" />
-                                                    </svg>
-
-
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                        <li class="page-item"><span class="page-link paginationDotDisabled">...</span>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">50</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true" class="d-flex">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.32367 14L3.5 13.1763L9.26392 7.41239C9.37327 7.303 9.43471 7.15465 9.43471 6.99997C9.43471 6.84529 9.37327 6.69695 9.26392 6.58755L3.50992 0.834721L4.33475 0.0098877L10.0876 5.76272C10.4157 6.09089 10.6 6.53593 10.6 6.99997C10.6 7.46401 10.4157 7.90905 10.0876 8.23722L4.32367 14Z"
-                                                            fill="#4D4E58" />
-                                                    </svg>
-
-
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <select class="form-select page-select w-auto textl-clr-dar fw-normal is-radius-8">
-                                    <option selected>10 / page</option>
-                                    <option value="1">20</option>
-                                    <option value="2">30</option>
-                                    <option value="3">50</option>
-                                </select>
-                                <div class="d-flex align-items-center gap-2">
-                                    <p class="mb-0 fs-14 text-dark-3">Go to</p>
-                                    <input type="text" class="page-input-form">
+                                    </div>
                                 </div>
                             </div>
-
+                        </div>
+                        <div>
                         </div>
                     </div>
-                    <!-- / pagination -->
                 </div>
-                <!-- Page Table  -->
+                <div class="col-lg-9">
+                    <div class="submission-right d-flex flex-column justify-content-between bg-white radius-8">
+                        <div class="tab-content " id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <table class="table align-middle student-profile ">
+                                    <tbody>
+                                        <tr class="border-0">
+                                            <td class="border-0 p-3 text-nowrap">
+                                                <div class="d-flex align-items-center gap-2 pe-3">
+                                                    <img src="assets/img/stProfile.png" class="img-fluid" alt="" />
+                                                    <h5 class="fs-5 fw-bold mb-0">Wade Warren</h5>
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap">
+                                                <div class="profileInfoCol">
+                                                    <h4 class="fs-12 text-dark-1 fw-semi-bold">
+                                                        Last active
+                                                    </h4>
+                                                    <p class="fs-6 text-dark-2">11 hour ago</p>
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap">
+                                                <div class="profileInfoCol">
+                                                    <h4 class="fs-12 text-dark-1 fw-semi-bold">Class</h4>
+                                                    <p class="fs-6 text-dark-2">8</p>
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap">
+                                                <div class="profileInfoCol">
+                                                    <h4 class="fs-12 text-dark-1 fw-semi-bold">Year group</h4>
+                                                    <p class="fs-6 text-dark-2">2023</p>
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap">
+                                                <div class="profileInfoCol">
+                                                    <h4 class="fs-12 text-dark-1 fw-semi-bold mb-3">Completion</h4>
+                                                    <div class="text-start text-nowrap mb-4" width="160px">
+                                                        <div class="progress" style="height: 8px;">
+                                                            <div class="progress-bar bg-clr-primary" role="progressbar"
+                                                                style="width: 50%; height: 8px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap">
+                                                <div class="profileInfoCol px-4">
+                                                    <h4 class="fs-12 text-dark-1 fw-semi-bold mb-2">Mastery avg</h4>
+                                                    <svg class="mb-3" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.00049 22V15H5.00049V22H2.00049Z" fill="#5964E0" />
+                                                        <path d="M9.99951 22V9H12.9995V22H9.99951Z" fill="#5964E0" />
+                                                        <path d="M18 22V2H21V22H18Z" fill="#E6E6EC" />
+                                                    </svg>
 
+                                                </div>
+                                            </td>
+                                            <td class="border-0 text-nowrap text-end">
+                                                <button type="button"
+                                                    class="btn fw-800 fs-6 text-white messageBtn d-flex align-items-center justify-content-center">Massage</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="my-4 px-4" >
+                                    <img src="assets/img/math8.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                            <h2 class="p-4">Question 2 ....</h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <h2 class="p-4">Question 3 ....</h2>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h2 class="p-4">Question 4 ....</h2>
+                            </div>
+                        </div>
+                        <div class="submission-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="d-flex align-items-center  gap-4">
+                                        <div>
+                                            <p class="mb-0 fs-6 fw-semi-bold text-dark-2">Raw submission:</p>
+                                        </div>
+                                         <div class=" pe-4 border-end">
+                                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                                <input class="form-check-input"   style="height: 24px; width: 41px;" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label fs-14 fw-medium text-clr-dark-3 ff-r" for="flexSwitchCheckChecked">On</label>
+                                              </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="assets/img/notif.svg" class="img-fluid" alt="">
+                                            <p class="fs-6 text-dark-3 mb-0">Report an issue</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div>
+                                        <button id="toggle-button" class="btn comment-submission d-flex align-items-center justify-content-center">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 13C1.5 6.64873 6.64873 1.5 13 1.5C19.3513 1.5 24.5 6.64873 24.5 13C24.5 19.3513 19.3513 24.5 13 24.5H1.5V13Z" stroke="#5964E0" stroke-width="3"/>
+                                                </svg>
+                                                
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="d-flex align-items-center gap-4 ">
+                                        <p class="fs-6 text-dark-2 fw-semi-bold mb-0">Give Marks</p>
+                                        <div class="result-submission d-flex align-items-center gap-3 px-3 py-3">
+                                            <input type="text" class="form-control" placeholder="20">
+                                            <div class="fs-14  text-dark-4 ff-r">
+                                                out off  10
+                                            </div>
+                                        </div>
+                                        <button type="button" class="submission-btn bg-clr-pink radius-8 fs-6 fw-800 text-white btn">Send Feedback</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
     <!-- dashboard -->
@@ -1046,6 +560,8 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
+
+ 
 </body>
 
 </html>
