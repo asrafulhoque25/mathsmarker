@@ -8,7 +8,7 @@
     background: #fff;
 }
 
-.login-registration-banner{
+.login-registration-banner {
     flex: 1 0 64%;
 
     .banner-image-space {
@@ -26,19 +26,22 @@
         }
     }
 }
-.login-registration-form-wrap{
+
+.login-registration-form-wrap {
     flex: 1 0 36%;
 
     .login-registration-form-innder-wrap {
         height: 100vh;
+
         .already-have-member {
             padding-bottom: 55px;
         }
     }
-    
+
     padding-inline: 120px 80px;
+
     .login-registration-inner {
-        
+
         min-width: 390px;
         max-width: 470px;
         width: 100%;
@@ -47,18 +50,20 @@
             max-width: 273px;
             margin-bottom: 12px;
         }
+
         .login-page-list {
             margin-top: 25px;
             gap: 8px;
+
             .login-page-list-item {
                 gap: 16px;
             }
         }
 
         .student-teacher-select-label {
-            
+
             .input-border {
-                border: 1px solid  #E6E6EC;
+                border: 1px solid #E6E6EC;
                 box-shadow: 2px 3px 0px 0px #E6E6EC;
                 border-radius: 12px;
             }
@@ -71,6 +76,7 @@
 
             position: relative;
             padding-left: 64px;
+
             .activeCheck,
             .defaultCheck {
                 position: absolute;
@@ -79,15 +85,17 @@
                 width: 24px;
                 height: 24px;
             }
-            .activeCheck{
+
+            .activeCheck {
                 display: none;
             }
-            
+
         }
-        
+
         .student-teacher-select {
             .student-select-login {
                 position: relative;
+
                 &::after {
                     position: absolute;
                     content: '';
@@ -99,8 +107,10 @@
                     z-index: 99;
                 }
             }
+
             .teacher-select-login {
                 position: relative;
+
                 &::after {
                     position: absolute;
                     content: '';
@@ -112,19 +122,22 @@
                     z-index: 99;
                 }
             }
+
             .student-teacher-select-bg-color {
                 background-color: transparent;
                 z-index: 8;
                 border-radius: 12px;
             }
+
             label {
                 input {
                     &:checked~ {
-                        .defaultCheck{
+                        .defaultCheck {
                             display: none;
                             z-index: 99;
                         }
-                        .activeCheck{
+
+                        .activeCheck {
                             display: block !important;
                             z-index: 99;
                         }
@@ -132,34 +145,41 @@
                         .input-border {
                             box-shadow: 3px 5px 0px 0px #5964E0;
                             border-radius: 12px;
-                            border: 1px solid  #F3F4FF;
+                            border: 1px solid #F3F4FF;
                         }
+
                         .student-teacher-select-bg-color {
                             background-color: #F3F4FF;
                             z-index: 5;
                             border-radius: 12px;
                         }
+
                         .check-label {
                             z-index: 99;
                         }
-                        
+
                     }
                 }
             }
         }
 
 
-        
+
     }
 }
 
 .login-registration-form {
-    input[type=text], input[type=email], input[type=password] {
+
+    input[type=text],
+    input[type=email],
+    input[type=password] {
         width: 100%;
     }
+
     .btn-save {
         height: 50px;
         margin-top: 15px;
+
         &:hover {
             span {
                 svg * {
