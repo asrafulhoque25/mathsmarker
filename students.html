@@ -602,7 +602,7 @@
                                                  
                                                   <li><a class="dropdown-item" href="#">Edit</a></li>
                                                   <li><a class="dropdown-item" href="student-reset-password.html">Reset password</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -664,7 +664,7 @@
                                                  
                                                   <li><a class="dropdown-item" href="#">Edit</a></li>
                                                   <li><a class="dropdown-item" href="student-reset-password.html">Reset password</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -725,7 +725,7 @@
                                                  
                                                   <li><a class="dropdown-item" href="#">Edit</a></li>
                                                   <li><a class="dropdown-item" href="student-reset-password.html">Reset password</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -786,7 +786,7 @@
                                                  
                                                   <li><a class="dropdown-item" href="#">Edit</a></li>
                                                   <li><a class="dropdown-item" href="student-reset-password.html">Reset password</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -848,7 +848,7 @@
                                                  
                                                   <li><a class="dropdown-item" href="#">Edit</a></li>
                                                   <li><a class="dropdown-item" href="student-reset-password.html">Reset password</a></li>
-                                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                  <li><a class="dropdown-item delete-btn" href="#" data-bs-toggle="modal" data-bs-target="#session-delete-modal">Delete</a></li>
                                                 </ul>
                                               </div>
                                         </td>
@@ -924,7 +924,29 @@
     </main>
     <!-- dashboard -->
 
-
+        <!-- session-delete-modal -->
+        <div class="modal fade" id="session-delete-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content radius-8 py-4">
+                    <div class="modal-body">
+                        <div class="modal-info text-center">
+                            <img src="assets/img/success-icon.svg" alt="icon" class="img-fluid">
+                            <h3 class="fs-4 fw-bold text-dark-1 mb-2 mt-3">
+                                Success
+                            </h3>
+                            <p class="fs-6 fw-normal text-dark-3 mb-4 pb-2">
+                                Your Sessions has been deleted.
+                            </p>
+                            <a href="index.html"
+                                class="text-decoration-none fw-bold fs-6 text-clr-primary bg-dark-7 px-4 py-2 rounded">
+                                Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- session-delete-modal -end -->
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

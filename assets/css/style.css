@@ -14,7 +14,7 @@ body.sidebar-collapsed .navigation-footer .nav-text { display: none; }
 body.sidebar-collapsed .navigation-footer .arrow-right { display: none; }
 
 @media (max-width: 576px) { body { --theme-gutter: 15px; } }
-:root { --clr-dark-1: #0f1127; --clr-dark-2: #2e3040; --clr-dark-5: #d2d2d6; --clr-dark: #282f58; --clr-gray: #999a9f; --clr-dark-4: #989fc8; --clr-dark-3: #4d4e58; --clr-light-pink: #f3f4ff; --clr-primary: #5964e0; --clr-yellow: #ffa114; --clr-info: #21afff; --clr-primary-shade: #f3f4ff; --clr-green: #4eb06d; --clr-red: #ff5252; --clr-yellow-shade: #fff1db; --clr-green-light: #00ffbe; --clr-dark-7: #f3f3f8; --clr-green-light-2: #ebfbf0; --clr-pink: #E129FF; }
+:root { --clr-dark-1: #0f1127; --clr-dark-2: #2e3040; --clr-dark-5: #d2d2d6; --clr-dark: #282f58; --clr-gray: #999a9f; --clr-dark-4: #989fc8; --clr-dark-3: #4d4e58; --clr-light-pink: #f3f4ff; --clr-primary: #5964e0; --clr-yellow: #ffa114; --clr-info: #21afff; --clr-primary-shade: #f3f4ff; --clr-green: #4eb06d; --clr-red: #ff5252; --clr-yellow-shade: #fff1db; --clr-green-light: #00ffbe; --clr-dark-7: #f3f3f8; --clr-green-light-2: #ebfbf0; --clr-pink: #e129ff; }
 
 /* reset, root - END */
 /* helper , base classes */
@@ -291,8 +291,7 @@ td.dp-highlight.ui-datepicker-today { border-radius: 50% 0 0 50%; }
 td.dp-highlight.ui-datepicker-today a { color: #fff; background: var(--clr-primary); border-radius: 50%; }
 
 .overview-main { overflow-x: hidden !important; }
-.overview-main .overview-wrapper { display: grid; grid-template-columns: 5.5fr 1fr; grid-gap: 25px; }
-.overview-main .overview-wrapper .notification-wrapper { min-height: 92vh; width: 245px; position: fixed; right: 0; top: var(--header-height); }
+.overview-main .overview-wrapper .notification-wrapper { min-height: 92vh; }
 .overview-main .overview-wrapper .notification-wrapper .notification-list { height: 90vh; overflow-y: scroll; }
 .overview-main .overview-wrapper .notification-wrapper .notification-list .notification-item .person-img { width: 38px; height: 38px; }
 .overview-main .overview-wrapper .notification-wrapper .notification-list .notification-item .ntf-time { font-size: 10px; }
@@ -479,8 +478,9 @@ td.data-count.bg-red { background-color: #ffe5e5; }
 .submission-details-main .submission-right .submission-bottom .submission-btn:hover { background-color: var(--clr-primary); }
 
 .reset-password-student { max-width: 600px; width: 100%; position: relative; }
-.reset-password-student .copyBtn { border-radius: 0px 8px 8px 0px; background: var(--dark-color-dark-5, #D2D2D6); height: 50px; padding: 0 30px; position: absolute; top: 11px; bottom: 0; right: 2px; }
+.reset-password-student .copyBtn { border-radius: 0px 8px 8px 0px; background: var(--dark-color-dark-5, #d2d2d6); height: 50px; padding: 0 30px; position: absolute; top: 11px; bottom: 0; right: 2px; }
 
 .comment { position: absolute; background-color: #fff; border: 1px solid #ccc; padding: 10px; max-width: 200px; word-wrap: break-word; border-radius: 8px; border: 1px solid rgba(24, 37, 53, 0.1); background: var(--white, #fff); -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.12); }
 
 /* Submission END*/
+.edition .btn-edit:hover svg * { fill: #fff !important; stroke: #fff !important; }

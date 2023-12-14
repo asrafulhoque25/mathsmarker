@@ -306,11 +306,11 @@
                             </div>
                             <div>
                                 <div class="d-flex align-items-center gap-4">
-                                    <a href="#"
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#add-new-sessions"
                                         class="radius-8 createBtn perple-border-2 d-flex justify-content-center align-items-center text-decoration-none fw-bold text-white">
                                         <span class="fs-6 ps-1">Add to a Session</span>
                                     </a>
-                                    <a href="class-setting.html"
+                                    <a href="#"  data-bs-toggle="offcanvas" data-bs-target="#add-new-worksheet"
                                         class="radius-8 createBtn bg-transparent border-clr-primary d-flex justify-content-center align-items-center text-decoration-none fw-bold text-clr-primary">
                                         <span class="fs-6 ps-1">Add to a Worksheet</span>
                                     </a>
@@ -1204,6 +1204,132 @@
         </div>
     </main>
     <!-- dashboard -->
+
+
+
+    <!-- add-new-worksheet off canvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="add-new-worksheet">
+        <div class="offcanvas-header pt-4 px-4">
+            <h5 class="offcanvas-title fs-4 fw-semi-bold text-clr-dark">
+                Create New Worksheet
+            </h5>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between h-100 px-4">
+            <form>
+                <fieldset class="mb-4">
+                    <legend>Worksheet name</legend>
+                    <input type="text" class="form-control" placeholder="Enter">
+                </fieldset>
+
+               
+
+                <fieldset class="mb-4">
+                    <legend>Select class</legend>
+                    <select class="form-select text-clr-gray border-0">
+                        <option selected>Select Class</option>
+                        <option value="1">Class One</option>
+                        <option value="2">Class Two</option>
+                        <option value="3">Class Three</option>
+                    </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                    <legend>Creation Date</legend>
+                    <input type="text" class="datepicker form-control text-clr-dark py-0" placeholder="Nov28, 02:00pm">
+                </fieldset>
+                <div class="d-flex gap-3 align-items-center mb-4 d-none">
+                    <fieldset class="w-100">
+                        <legend class="fs-12">Start Date</legend>
+                        <input type="text" class="form-control text-clr-dark p-0" id="input1" size="10"
+                            placeholder="12/25/2023">
+                    </fieldset>
+                    <fieldset class="w-100">
+                        <legend class="fs-12">End Date</legend>
+                        <input type=" text" class="form-control text-clr-dark p-0" id="input2" size="10"
+                            placeholder="12/30/2023">
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="btn-wrap d-flex justify-content-between">
+                <button type="button"
+                    class="btn-cancel border-btn bg-white perple-border-1 text-clr-primary px-4 py-2 rounded-1"
+                    data-bs-dismiss="offcanvas">
+                    Cancel
+                </button>
+                <button type="button" class="btn-save bg-btn bg-clr-primary text-white px-4 py-2 rounded-1"
+                    data-bs-dismiss="offcanvas">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- add-new-worksheet off canvas -end -->
+
+
+            <!-- add-new-sessions off canvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="add-new-sessions">
+                <div class="offcanvas-header pt-4 px-4">
+                    <h5 class="offcanvas-title fs-4 fw-semi-bold text-clr-dark">
+                        Create New Sessions
+                    </h5>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 px-4">
+                    <form>
+                        <fieldset class="mb-4">
+                            <legend>Sessions name</legend>
+                            <input type="text" class="form-control" placeholder="Enter">
+                        </fieldset>
+        
+                        <fieldset class="mb-3">
+                            <legend>Sessions date</legend>
+                            <input type="text" class="datepicker form-control text-clr-dark py-0" placeholder="Nov28, 02:00pm">
+                        </fieldset>
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <fieldset class="w-100">
+                                <legend class="fs-12">Start Date</legend>
+                                <input type="text" class="form-control text-clr-dark p-0" id="input1" size="10"
+                                    placeholder="12/25/2023">
+                            </fieldset>
+                            <fieldset class="w-100">
+                                <legend class="fs-12">End Date</legend>
+                                <input type=" text" class="form-control text-clr-dark p-0" id="input2" size="10"
+                                    placeholder="12/30/2023">
+                            </fieldset>
+                        </div>
+        
+                        <fieldset class="mb-4">
+                            <legend>Select class</legend>
+                            <select class="form-select text-clr-gray border-0">
+                                <option selected>Select Class</option>
+                                <option value="1">Class One</option>
+                                <option value="2">Class Two</option>
+                                <option value="3">Class Three</option>
+                            </select>
+                        </fieldset>
+        
+                        <div class="form-check form-switch d-flex justify-content-between px-0">
+                            <label class="form-check-label text-clr-dark-3 fw-medium" for="flexSwitchCheckChecked">
+                                Allow second attempt
+                            </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                    </form>
+        
+                    <div class="btn-wrap d-flex justify-content-between">
+                        <button type="button"
+                            class="btn-cancel border-btn bg-white perple-border-1 text-clr-primary px-4 py-2 rounded-1"
+                            data-bs-dismiss="offcanvas">
+                            Cancel
+                        </button>
+                        <button type="button" class="btn-save bg-btn bg-clr-primary text-white px-4 py-2 rounded-1"
+                            data-bs-dismiss="offcanvas">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- add-new-sessions off canvas -end -->
+
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
